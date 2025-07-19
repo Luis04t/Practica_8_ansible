@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+ 
+  server1:
+   
+    build: .
+   
+    container_name: server1
+    
+    hostname: server1
+    
+    ports:
+      - "2201:22"
+    
+    restart: always
+
+  
+  server2:
+    build: .
+    container_name: server2
+    hostname: server2
+    ports:
+      - "2202:22"
+    restart: always
+
+
+  server3:
+    build: .
+    container_name: server3
+    hostname: server3
+    ports:
+      - "2203:22"
+    restart: always
+
+ 
+  server4:
+    build: .
+    container_name: server4
+    hostname: server4
+    ports:
+      - "2204:22"
+    restart: always
+
+ 
+  server5:
+    build: .
+    container_name: server5
+    hostname: server5
+    ports:
+      - "2205:22"
+    restart: always
